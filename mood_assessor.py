@@ -15,11 +15,11 @@ def assess_mood():
     date_today = datetime.date.today()
     date_today_str = str(date_today)
 
-    # file = open(file_path, 'r')
-    # for line in file:
-    #     if line.startswith(date_today_str):
-    #         print("Sorry, you have already entered your mood today.")
-    #         return None
+    file = open(file_path, 'r')
+    for line in file:
+        if line.startswith(date_today_str):
+            print("Sorry, you have already entered your mood today.")
+            return None
     
 
     curr_mood = ''
